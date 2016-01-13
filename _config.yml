@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pigments
+highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
@@ -9,7 +9,7 @@ permalink:        pretty
 # Setup
 title:            'Colin Wahl'
 tagline:          'My Blog'
-description:      'web development, computer science, math, coffee. my small presence on the large web.'
+description:      'web development. computer science. mathematics. coffee. trying to make my contribution to the world.'
 url:              http://colinwahl.github.io
 baseurl:          /
 
