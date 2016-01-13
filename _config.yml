@@ -1,0 +1,35 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pigments
+
+# Permalinks
+permalink:        pretty
+#relative_permalinks: true
+
+# Setup
+title:            'Colin Wahl'
+tagline:          'My Blog'
+description:      'web development, computer science, math, coffee. my small presence on the large web.'
+url:              http://colinwahl.github.io
+baseurl:          /
+
+footer-links:
+  dribbble:
+  email: colin.t.wahl@gmail.com
+  facebook:
+  flickr:
+  github: colinwahl
+  instagram:
+  linkedin: wahlcolin
+  pinterest:
+  rss: # just type anything here for a working RSS icon
+  twitter:
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
+author:
+  name:           'Colin Wahl'
+  url:            https://github.com/colinwahl
+
+gems: [jekyll-paginate, jekyll-gist, redcarpet, pigments]
+paginate:         5
