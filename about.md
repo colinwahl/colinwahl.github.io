@@ -4,7 +4,7 @@ title: About
 ---
 Welcome!
 
-My name is Colin Wahl, and I am studying Mathematics and Computer Science at UGA.  I have completed internships at TSYS Loyalty and Vestigo.  I am beginning my internship at The Home Depot in May of 2016.
+My name is Colin Wahl, and I am studying Mathematics and Computer Science at UGA.  I have completed internships at TSYS Loyalty and [Vestigo](vestigo.co).  I am beginning my internship at The Home Depot in May of 2016.
 
 I have experience working with Javascript and Ruby.  I have completed projects using React, and Ruby on Rails.  I have also made an app using React Native (stay tuned for when it hits the app store).  I also have every intention of learning and working with Haskell and Elm.
 
