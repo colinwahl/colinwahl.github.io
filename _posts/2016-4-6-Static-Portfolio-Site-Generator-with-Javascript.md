@@ -5,14 +5,13 @@ title: A Portfolio/Blog SPA Part 1 - The Idea
 
 Recently I have been working on a static site generator (like jekyll) which will turn your static content into a single page app powered by React and React-Router!  In this post, I will explain the idea behind it, and in future posts, I will dive into the code that makes it happen.
 
-I really like the way static site generators work.  I like having the ability to drop in content, not worry about what is going on under the hood, and having everything just _work_.  I went into the project with a list of things that I wanted to try out.  Here is said list:
+I really like the way static site generators work.  I like having the ability to drop in content, not worry about what is going on under the hood, and having everything just _work_.  I went into the project with a list of things that I wanted to do.  Here is said list:
 
 1. Static site generator which works like jekyll, allowing the user to ignore what is going on under the hood
 2. Single page application, using [React Router](https://github.com/reactjs/react-router)
 3. Smooth transitions between views
 4. Be consistent with Material Design
 5. Server side rendering
-6. Hosting on github pages because I am a broke student
 
 Wow, that is a lot of buzzwords! Let's jump into how it is done.
 
