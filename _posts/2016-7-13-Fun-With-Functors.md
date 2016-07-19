@@ -57,7 +57,7 @@ Recall that the Functor typeclass provides the fmap function.
 fmap :: Functor f => (a -> b) -> f a -> f b
 ```
 
-Believe it or not, we already have this mysterious function `(a -> b)`, it is the Car data constructor!  If we remember that in Haskell, all functions are curried, so we can do `fmap Car allMakes` to get a List of new functions that are waiting to receive a `Model` and `Color` in order to create a `Car`.
+Believe it or not, we already have this mysterious function `(a -> b)`, it is the Car data constructor!  If we remember that all function are curried in haskell, so we can do `fmap Car allMakes` to get a List of new functions that are waiting to receive a `Model` and `Color` in order to create a `Car`.
 
 Now recall that the Applicative typeclass provides the `<*>` function.
 
