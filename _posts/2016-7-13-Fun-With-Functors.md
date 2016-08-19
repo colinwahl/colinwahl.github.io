@@ -82,4 +82,17 @@ allCars = Car <$> allMakes <*> allModels <*> allColors
 
 Indeed, the length of `allCars` is `105`, just like we expected!
 
-So there you have it!  We enumerated a product type by utilizing a the Functor and Applicative Functor properties of the `List` type!  
+So there you have it!  We enumerated a product type by utilizing the Functor and Applicative Functor properties of the `List` type!  
+
+Edit (8/19/16):
+I realized that while the solution I have above is simple and shows off the power of functors, it is not the simplest solution.
+
+Check out `liftA3`
+```haskell
+liftA3 :: Applicative f => (a -> b -> c -> d) -> f a -> f b -> f c -> f d
+```
+
+So we can enumerate all of the cars with:
+```haskell
+liftA3 Car allMakes allModels allColors
+```
