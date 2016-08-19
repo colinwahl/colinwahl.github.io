@@ -88,11 +88,15 @@ Edit (8/19/16):
 I realized that while the solution I have above is simple and shows off the power of functors, it is not the simplest solution.
 
 Check out `liftA3`
+
 ```haskell
 liftA3 :: Applicative f => (a -> b -> c -> d) -> f a -> f b -> f c -> f d
 ```
 
 So we can enumerate all of the cars with:
+
 ```haskell
 liftA3 Car allMakes allModels allColors
 ```
+
+Now that sure is cool!
