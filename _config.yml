@@ -8,7 +8,7 @@ permalink:        pretty
 
 # Setup
 title:            'Colin Wahl'
-tagline:          'My Blog'
+tagline:          ''
 description:      'web development. computer science. mathematics. coffee. trying to make my contribution to the world.'
 url:              http://colinwahl.github.io
 baseurl:          /
