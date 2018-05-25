@@ -34,5 +34,5 @@ author:
   name:           'Colin Wahl'
   url:            https://github.com/colinwahl
 
-gems: [jekyll-paginate, jekyll-gist, redcarpet, pigments]
+plugins: [jekyll-paginate, jekyll-gist, redcarpet, pigments]
 paginate:         5

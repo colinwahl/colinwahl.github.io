@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: A Portfolio/Blog SPA Part 1 - The Idea
 ---
 
