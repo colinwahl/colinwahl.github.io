@@ -50,7 +50,7 @@ getPrefferedAlignment tooltip = do
 
 The underlying `ExceptT` type used in the example above is `ExceptT Alignment Effect Unit`.  Using `Unit` as the result type (where the computation did _not_ succeed) allows for clean use of [`for_`](https://pursuit.purescript.org/packages/purescript-foldable-traversable/4.1.1/docs/Data.Foldable#v:for_) and [`when`](https://pursuit.purescript.org/packages/purescript-prelude/4.1.0/docs/Control.Applicative#v:when), which looks a lot like a for loop with a break or return statement!
 
-Other applications of the pattern are for turn based games, where each turn may result in a winner of the game.  Consider a type `StateT GameState Effect Unit` which respresents the state we need to thread in between distinct turns.  You could have each turn check the state and do nothing if the win condition has been met, _or_ you can add `ExceptT` to make `ExceptT Winner (StateT GameState Effect) Unit`. You can then use `throwError` to short-circuit when a win condition is satisfied.  A turn can then look like this:
+Other applications of the pattern are for turn based games, where each turn may result in a winner of the game.  Consider a type `StateT GameState Effect Unit` which represents the state we need to thread in between distinct turns.  You could have each turn check the state and do nothing if the win condition has been met, _or_ you can add `ExceptT` to make `ExceptT Winner (StateT GameState Effect) Unit`. You can then use `throwError` to short-circuit when a win condition is satisfied.  A turn can then look like this:
 ```haskell
 turn :: ExceptT Winner (StateT GameState Effect) Unit
 turn = do
