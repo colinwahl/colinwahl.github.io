@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Success with ExceptT"
+title:  "Exceptional Success with ExceptT"
 permalink: exceptional-success
 ---
-As the [documentation](https://pursuit.purescript.org/packages/purescript-transformers/4.2.0/docs/Control.Monad.Except.Trans#t:ExceptT) for `ExceptT` states, the `ExceptT` monad transformer is used to add exceptions to other monads.  More specifically, `ExceptT` allows the use of `throwError :: e -> m a` within a monad transformer stack, where `throwError` halts computation, yielding the error `e`.
+As the [documentation](https://pursuit.purescript.org/packages/purescript-transformers/4.2.0/docs/Control.Monad.Except.Trans#t:ExceptT) for `ExceptT` states, the `ExceptT` monad transformer is used to add exceptions to other monads.  More specifically, `ExceptT` allows the use of `throwError` within a monad transformer stack, where `throwError` halts computation, yielding a result.
 
 However, the naming convention here is unfortunate, because exceptions are usually used to denote _bad_ or _unexpected_ events in a system, especially those which the system may not be able to handle.  If someone is coming from a javascript background where the `throw` statement is almost always used to indicate bad input or some other error case, then it is easy to glance over the power of `ExceptT`.
 
