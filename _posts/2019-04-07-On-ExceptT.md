@@ -57,8 +57,7 @@ turn = do
   execTurn
   state <- gets
   winner <- checkWinStates state
-  when (isJust winner) do
-    throwError winner
+  for_ winner throwError
 ```
 
 A more concrete example is tic-tac-toe where there are at most 9 turns. Either a player wins during their turn, or all 9 turns happen and no one wins.  This is easily represented using the pattern above:
