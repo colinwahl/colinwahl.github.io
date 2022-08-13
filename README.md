@@ -1,6 +1,7 @@
 TODOS:
 
-* Set up github actions to deploy to github pages
+- Set up github actions to deploy to github pages
+
 * Lookup copyright icon/what even is it
 * Syntax highlighting (based on tokyo night, storm)
 * Variables for colors
