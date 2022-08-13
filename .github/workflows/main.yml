@@ -24,6 +24,7 @@ jobs:
           git init
           git config user.name "GitHub Actions"
           git config user.email "github-actions-bot@users.noreply.github.com"
+          echo "" > .nojekyll
           git add .
           git commit -m "Rebuild website"
           git push --force "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/colinwahl/colinwahl.github.io.git" main:gh-pages
