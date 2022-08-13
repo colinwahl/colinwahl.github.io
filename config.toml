@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://colinwahl.github.io"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -15,6 +15,7 @@ taxonomies = [
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+hightlight_theme = "oceanic_dark"
 
 [extra]
 # Put all your custom variables here
