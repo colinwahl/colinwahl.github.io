@@ -13,6 +13,8 @@ jobs:
       - name: zola build
         run: zola build
       - name: copy public folder to gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Pushing artifacts to gh-pages"
           cd public
