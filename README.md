@@ -1,14 +1,14 @@
 TODOS:
 
 - Set up github actions to deploy to github pages
+- What is robots.txt
+- Fixup base website name
 
 * Lookup copyright icon/what even is it
 * Syntax highlighting (based on tokyo night, storm)
 * Variables for colors
 * Write about page
-* What is robots.txt
 * Write 404 page
-* Fixup base website name
 * Handle long titles / many tags
 
 ===
