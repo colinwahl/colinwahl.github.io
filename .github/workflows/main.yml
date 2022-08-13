@@ -21,5 +21,5 @@ jobs:
           git config user.email "github-actions-bot@users.noreply.${GITHUB_HOSTNAME}"
           git add .
           git commit -m "Rebuild website"
-          git push --force master:gh-pages
+          git push --force "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@colinwahl/colinwahl.github.io.git" master:gh-pages
           echo "Deploy complete"
