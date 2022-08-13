@@ -1,0 +1,32 @@
+{% macro path_components(components) %}
+  <div class="Path">
+  {% set_global curr_path = "" %}
+  {% for component in components %}
+    {% if loop.index0 == 0 %}
+    <div class="Path__root"><a href="/">~</a></div>
+    {% set_global curr_path = curr_path ~ "/" ~ component %}
+    <div class="Path__separator">/</div>
+    <div class="Path__item"><a href="{{curr_path}}">{{component}}</a></div>
+    {% else %}
+    {% set_global curr_path = curr_path ~ "/" ~ component %}
+    <div class="Path__separator">/</div>
+    <div class="Path__item"><a href="{{curr_path}}">{{component}}</a></div>
+    {% endif %}
+  {% else %}
+    <div class="Path__root"><a href="/">~</a></div> 
+  {% endfor %}
+  </div>
+{% endmacro path_components %}
+
+{% macro display_tags(tags) %}
+  <div class="Tags">
+    <div>[&nbsp</div>
+    {% for tag in tags %}
+      {% if loop.first == false %}
+        <div>,&nbsp</div>
+      {% endif %}
+      <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{tag}}</a>
+    {% endfor %}
+    <div>&nbsp]</div>
+  </div>
+{% endmacro display_tags %}

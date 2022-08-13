@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+{% if section.title %}
+  <div class="Title">
+    {{ section.title }}
+  </div>
+{% endif %}
+{% if section.description %}
+  <div class="Description">
+    {{ section.description }}
+  </div>
+{% endif %}
+<div class="Directory">
+  {% for subsection in section.subsections %}
+  {% set s = get_section(path = subsection) %}
+  <div class="Directory__entry">
+    <div class="Directory__left">
+      <span class="material-icons">folder</span>
+      <a class="Directory__link" href="{{ s.permalink | safe }}">{{ s.title }}</a>
+    </div>
+    <div class="Directory__right">
+      {% if s.title != "Tags" %}
+        {{ s.pages | length }}
+        {% if s.pages | length == 1 %}
+          <span>&nbspEntry</span>
+        {% else %}
+          <span>&nbspEntries</span>
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+  {% for page in section.pages %} 
+  <div class="Directory__entry">
+    <div class="Directory__left">
+      <span class="material-icons">description</span>
+      <a class="Directory__link" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    </div>
+    <div class="Directory__right">
+      {% if page.taxonomies.tags %}
+        {{ macros::display_tags(tags = page.taxonomies.tags) }}
+      {% endif %}
+      {% if page.date %}
+        {{ page.date }}
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="Directory">
+  {% for term in terms %}
+    <div class="Directory__entry">
+      <div class="Directory__left">
+        <span class="material-icons">folder</span>
+        <a class="Directory__link" href="{{ term.permalink | safe }}">{{ term.name }}</a>
+      </div>
+      <div class="Directory__right">
+        {{ term.pages | length }}
+        {% if term.pages | length == 1 %}
+          <span>&nbspEntry</span>
+        {% else %}
+          <span>&nbspEntries</span>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock content %}

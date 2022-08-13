@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="Directory">
+  {% for page in term.pages %}
+    <div class="Directory__entry">
+      <div class="Directory__left">
+        <span class="material-icons">description</span>
+        <a class="Directory__link" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      </div>
+      <div class="Directory__right">
+        {% if page.taxonomies.tags %}
+          {{ macros::display_tags(tags = page.taxonomies.tags) }}
+        {% endif %}
+        {% if page.date %}
+          {{ page.date }}
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock content %}

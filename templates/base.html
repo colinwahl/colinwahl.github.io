@@ -1,0 +1,42 @@
+{% import "macros.html" as macros %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>/home/colin</title>
+  <link rel="stylesheet" href="/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="App">
+    <div class="Header">
+      <div class="Header__path">
+        {% if section %}
+          {{ macros::path_components(components = section.components) }}
+        {% elif page %}
+          {{ macros::path_components(components = page.components) }}
+        {% elif term %}
+          {{ macros::path_components(components = [ "tags", term.slug ]) }}
+        {% elif terms %}
+           {{ macros::path_components(components = [ "tags" ]) }}         
+        {% endif %}
+      </div>
+      <div class="Header__links">
+        <a href="/about">About</a>
+      </div>
+    </div>
+    <div class="Content">
+      {% block content %} {% endblock %}
+    </div>
+    <div class="Footer">
+      Copyright Colin Wahl
+    </div>
+  </div>
+</body>
+
+</html>

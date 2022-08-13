@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+  <div class="Title">
+    <div class="Title__left">{{ page.title }}</div>
+    <div class="Title__right">
+      {% if page.taxonomies.tags %}
+        {{ macros::display_tags(tags = page.taxonomies.tags) }}
+      {% endif %}
+      <div>{{ page.date }}</div>
+    </div>
+  </div>
+  {{ page.content | safe }}
+{% endblock content %}
