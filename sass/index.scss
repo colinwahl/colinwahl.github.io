@@ -1,5 +1,8 @@
 $horizontal-space: 2ch;
 $vertical-space: 16px;
+$text-color: #9aa5ce;
+$border-color: #565f89;
+$background-color: #24283b;
 
 * {
   font-family: 'Roboto Mono', monospace;
@@ -13,8 +16,8 @@ html {
 body {
   min-height: 100%;
   display: flex;
-  background: #24283b;
-  color: #9aa5ce;
+  background: $background-color;
+  color: $text-color;
   margin: 0;
 }
 
@@ -29,7 +32,7 @@ body {
 
   a {
     text-decoration: none;
-    color: #9aa5ce;
+    color: $text-color;
   }
 
   .material-icons {
@@ -65,7 +68,7 @@ body {
 
   &::after {
     content: '';
-    background-image: linear-gradient(to right, transparent 5%, #565f89 5% 95%, transparent 95%);
+    background-image: linear-gradient(to right, transparent 5%, $border-color 5% 95%, transparent 95%);
     background-repeat: repeat-x;
     background-size: 1ch 2px;
     position: absolute;
@@ -143,7 +146,7 @@ body {
 
   &::after {
     content: '';
-    background-image: linear-gradient(to right, transparent 5%, #565f89 5% 95%, transparent 95%);
+    background-image: linear-gradient(to right, transparent 5%, $border-color 5% 95%, transparent 95%);
     background-repeat: repeat-x;
     background-size: 1ch 2px;
     position: absolute;
@@ -157,10 +160,6 @@ body {
   &__left {
     display: flex;
     align-items: center;
-
-    .material_icons {
-      font-size: 1ch;
-    }
   }
 
   &__right {
