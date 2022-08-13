@@ -12,4 +12,12 @@ jobs:
         run: wget -q -O - "https://github.com/getzola/zola/releases/download/v0.16.0/zola-v0.16.0-x86_64-unknown-linux-gnu.tar.gz" | tar xzf - -C /usr/local/bin
       - name: zola build
         run: zola build
-
+      - name: copy public folder to gh-pages
+        run: |
+          echo "Pushing artifacts to gh-pages"
+          cd public
+          git init
+          git add .
+          git commit -m "Rebuild website"
+          git push --force master:gh-pages
+          echo "Deploy complete"
