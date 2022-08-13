@@ -110,6 +110,15 @@ body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+
+  pre {
+    max-width: 1000ch;
+    overflow-x: scroll;
+  }
+
+  code table {
+    border-spacing: $horizontal-space 0;
+  }
 }
 
 .Title {
@@ -129,6 +138,8 @@ body {
 
 .Footer {
   position: relative;
+  display: flex;
+  justify-content: space-between;
 
   &::after {
     content: '';
@@ -138,9 +149,24 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    top: -4px;
     width: 100%;
     height: 2px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    .material_icons {
+      font-size: 1ch;
+    }
+  }
+
+  &__right {
+    a {
+      margin-left: $horizontal-space;
+    }
   }
 }
 

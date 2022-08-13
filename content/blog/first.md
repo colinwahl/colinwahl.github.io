@@ -7,9 +7,13 @@ tags = ["Rust", "PureScript"]
 
 This is my first blog post.
 
-```purescript,linenos
+```purs,linenos
+import Prelude
+
+-- Foo is a function.
 foo :: Effect Unit
-foo = pure unit
+foo = do
+  pure unit
 ```
 
 This is my first blog post.
