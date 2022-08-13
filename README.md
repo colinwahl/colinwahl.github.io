@@ -5,10 +5,10 @@ TODOS:
 - Fixup base website name
 - Lookup copyright icon/what even is it
 - Syntax highlighting (went with visual-studio-dark for now)
+- Variables for colors
+- Write 404 page
 
-* Variables for colors
 * Write about page
-* Write 404 page
 * Handle long titles / many tags
 
 ===
