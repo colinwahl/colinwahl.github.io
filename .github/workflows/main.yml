@@ -17,6 +17,8 @@ jobs:
           echo "Pushing artifacts to gh-pages"
           cd public
           git init
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions-bot@users.noreply.${GITHUB_HOSTNAME}"
           git add .
           git commit -m "Rebuild website"
           git push --force master:gh-pages
