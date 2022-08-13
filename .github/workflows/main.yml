@@ -17,9 +17,9 @@ jobs:
           echo "Pushing artifacts to gh-pages"
           cd public
           git config --global init.defaultBranch main
+          git init
           git config user.name "GitHub Actions"
           git config user.email "github-actions-bot@users.noreply.${GITHUB_HOSTNAME}"
-          git init
           git add .
           git commit -m "Rebuild website"
           git push --force "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@${GITHUB_HOSTNAME}/colinwahl.github.io.git" main:gh-pages
