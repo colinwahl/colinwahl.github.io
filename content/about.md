@@ -9,7 +9,7 @@ Hi! My name is Colin Wahl.
 
 I'm a software engineer at Awake Security (acquired by Arista Networks).
 
-My professional work currently focuses on the development of elegant and useful user interfaces using [PureScript](https://github.com/purescript/purescript). We use PureScript for all UI development at Awake, and I've been able to help develop/maintain the PureScript ecosystem as a result.
+My professional work currently focuses on the development of elegant, useful and performant user interfaces using [PureScript](https://github.com/purescript/purescript). We use PureScript for all UI development at Awake, and I've been able to help develop/maintain the PureScript ecosystem as a result.
 
 I've had the most fun working on the following projects:
 * Being a core contributor to the [PureScript Registry](https://github.com/purescript/registry), helping to get it to alpha and beyond
