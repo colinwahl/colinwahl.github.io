@@ -3,6 +3,7 @@ $vertical-space: 16px;
 $text-color: #9aa5ce;
 $border-color: #565f89;
 $background-color: #24283b;
+$link-color: #7aa2f7;
 
 * {
   font-family: 'Roboto Mono', monospace;
@@ -31,8 +32,7 @@ body {
   flex-grow: 1;
 
   a {
-    text-decoration: none;
-    color: $text-color;
+    color: $link-color;
   }
 
   .material-icons {
