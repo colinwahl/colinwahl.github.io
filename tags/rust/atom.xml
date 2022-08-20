@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - Rust</title>
+	<link href="https://colinwahl.github.io/tags/rust/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://colinwahl.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2019-11-27T00:00:00+00:00</updated>
+	<id>https://colinwahl.github.io/tags/rust/atom.xml</id>
+	<entry xml:lang="en">
+		<title>My first post</title>
+		<published>2019-11-27T00:00:00+00:00</published>
+		<updated>2019-11-27T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://colinwahl.github.io/blog/first/" type="text/html"/>
+		<id>https://colinwahl.github.io/blog/first/</id>
+		<content type="html">&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;pre data-linenos data-lang=&quot;purs&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-purs &quot;&gt;&lt;code class=&quot;language-purs&quot; data-lang=&quot;purs&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;1&lt;&#x2F;td&gt;&lt;td&gt;&lt;span style=&quot;color:#569cd6;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;Prelude
+&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;&#x2F;td&gt;&lt;td&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;&#x2F;td&gt;&lt;td&gt;&lt;span style=&quot;color:#608b4e;&quot;&gt;-- Foo is a function.
+&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;&#x2F;td&gt;&lt;td&gt;&lt;span&gt;foo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#569cd6;&quot;&gt;:: Effect Unit
+&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;&#x2F;td&gt;&lt;td&gt;&lt;span&gt;foo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#569cd6;&quot;&gt;= do
+&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;&lt;tr&gt;&lt;td&gt;6&lt;&#x2F;td&gt;&lt;td&gt;&lt;span&gt;  pure unit
+&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
